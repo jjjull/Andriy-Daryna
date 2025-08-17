@@ -64,10 +64,10 @@ const TypingText: React.FC<TypingTextProps> = ({
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <h3 className="text-1,5xl md:text-2xl lg:text-4xl font-light text-gray-800 tracking-wide text-center">
+      <h3 className="text-1,5xl md:text-2xl lg:text-4xl font-semibold text-gray-800 tracking-wide text-center">
         {text.slice(0, currentIndex)}
         <span 
-          className={`inline-block w-1 h-8 bg-green-800 ml-1 ${
+          className={`inline-block w-1 h-5 bg-green-800 ml-1 ${
             showCursor ? 'opacity-100' : 'opacity-0'
           } transition-opacity duration-100`}
         />

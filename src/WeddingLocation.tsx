@@ -1,16 +1,44 @@
-import { MapPin } from "lucide-react"; // іконка (можна замінити на свій svg)
+import { MapPin } from "lucide-react"; 
+import { motion } from "framer-motion";
 
 export default function WeddingLocation() {
   return (
     <section className="px-4 py-20">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-light text-gray-800 mb-12">
-          Локації весілля
-        </h2>
+        {/* Заголовок */}
+        <motion.h2
+          className="text-xl md:text-2xl lg:text-4xl font-semibold text-gray-800 mb-12"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          ЛОКАЦІЇ ВЕСІЛЛЯ
+        </motion.h2>
 
-        <div className="grid gap-10 md:grid-cols-2">
+        {/* Grid з картками */}
+        <motion.div
+          className="grid gap-10 md:grid-cols-2"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.3 },
+            },
+          }}
+        >
           {/* Блок: вінчання */}
-          <div className="bg-white shadow-lg rounded-2xl p-8 md:p-10 flex flex-col items-center text-center">
+          <motion.div
+            className="bg-white shadow-lg rounded-2xl p-8 md:p-10 flex flex-col items-center text-center"
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.8 }}
+          >
             <MapPin className="w-12 h-12 text-green-800 mb-4" />
             <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">
               Вінчання
@@ -27,10 +55,17 @@ export default function WeddingLocation() {
             >
               Відкрити на карті
             </a>
-          </div>
+          </motion.div>
 
           {/* Блок: святкування */}
-          <div className="bg-white shadow-lg rounded-2xl p-8 md:p-10 flex flex-col items-center text-center">
+          <motion.div
+            className="bg-white shadow-lg rounded-2xl p-8 md:p-10 flex flex-col items-center text-center"
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.8 }}
+          >
             <MapPin className="w-12 h-12 text-green-800 mb-4" />
             <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">
               Святкування
@@ -47,8 +82,8 @@ export default function WeddingLocation() {
             >
               Відкрити на карті
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

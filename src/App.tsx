@@ -158,14 +158,14 @@ function App() {
 
       {/* Guests Section */}
       <section
-        className="w-full bg-white flex flex-col justify-center items-center py-6 relative"
+        className="w-full bg-white flex flex-col   justify-center items-center py-6 relative"
         ref={guestsRef}
       >
         <TypingText
           text="ДОРОГІ НАШІ ГОСТІ!"
           speed={120}
           isActive={isTypingActive}
-          className="absolute top-[60px] left-1/2 -translate-x-1/2 "
+          className="absolute top-[60px] left-1/2 -translate-x-1/2  "
 
         />
         <motion.img

@@ -45,7 +45,7 @@ export default function WeddingTimeline() {
 
   return (
     <section className="px-4  bg-white">
-      <h3 className="text-1,5xl md:text-2xl lg:text-4xl font-light text-center text-gray-800 pb-10 ">
+      <h3 className="text-1,5xl md:text-2xl lg:text-4xl font-semibold text-center text-gray-800 pb-10 ">
           ПЛАН НАШОГО ВЕСІЛЛЯ
         </h3>
       <div className="max-w-xs mx-auto">
