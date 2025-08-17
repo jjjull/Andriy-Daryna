@@ -113,7 +113,7 @@ function App() {
               <div className="text-xl font-light">
                 <span>жовтня</span>
               </div>
-              <div className="mx-8 text-6xl font-thin">11</div>
+              <div className="mx-8 text-4xl font-thin font-[Montserrat]">11</div>
               <div className="text-xl font-light">
                 <span>2025</span>
               </div>
