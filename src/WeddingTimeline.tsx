@@ -36,10 +36,10 @@ const Arrow = ({ reverse = false }) => (
 
 export default function WeddingTimeline() {
   const timeline = [
-    { time: "12:00", title: "Вінчання", icon: Church },
-    { time: "12:00", title: "Збір гостей", icon: Glasses },
-    { time: "13:00", title: "Весільна церемонія", icon: Rings },
-    { time: "14:00", title: "Святковий банкет", icon: Plate },
+    { time: "11:00", title: "Вінчання", icon: Church },
+    { time: "15:30", title: "Збір гостей", icon: Glasses },
+    { time: "16:00", title: "Весільна церемонія", icon: Rings },
+    { time: "17:00", title: "Святковий банкет", icon: Plate },
   
   ];
 

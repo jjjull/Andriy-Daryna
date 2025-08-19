@@ -26,7 +26,7 @@ export default function Confirmation() {
           Будемо вдячні, якщо ви підтвердите свою присутність
           на нашому весіллі <br />
           <span className="font-semibold text-green-800">
-            до 11.09.2024
+            до 11.09.2025
           </span>
         </motion.p>
       </div>

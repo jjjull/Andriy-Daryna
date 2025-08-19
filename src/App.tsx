@@ -5,8 +5,10 @@ import WeddingInvitation from "./Wedding Invitation.jpg";
 import { motion } from "framer-motion";
 import WeddingTimeline from "./WeddingTimeline";
 import WeddingLocation from "./WeddingLocation";
-import DressCode from "./DressCode"
+import DressCode from "./DressCode";
 import Confirmation from "./Confirmation";
+import FooterBg from "./heart.jpg";
+
 
 interface TimeLeft {
   days: number;
@@ -51,7 +53,6 @@ function App() {
     return () => clearInterval(timer);
   }, []);
 
-  
   // Відслідковування появи блоку "Дорогі наші гості"
   useEffect(() => {
     if (!guestsRef.current) return;
@@ -113,7 +114,9 @@ function App() {
               <div className="text-xl font-light">
                 <span>жовтня</span>
               </div>
-              <div className="mx-8 text-4xl font-thin font-[Montserrat]">11</div>
+              <div className="mx-8 text-4xl font-thin font-[Montserrat]">
+                11
+              </div>
               <div className="text-xl font-light">
                 <span>2025</span>
               </div>
@@ -166,7 +169,6 @@ function App() {
           speed={120}
           isActive={isTypingActive}
           className="absolute top-[60px] left-1/2 -translate-x-1/2  "
-
         />
         <motion.img
           src={WeddingInvitation}
@@ -178,28 +180,50 @@ function App() {
         />
       </section>
 
-
-
       {/* Wedding Details */}
       <WeddingTimeline />
       <DressCode />
       <Confirmation />
       <WeddingLocation />
 
+      {/* Animal Section */}
+      <section className="relative bg-white pb-12 px-6 text-center max-w-3xl mx-auto">
+        <h3 className="text-2xl font-light mb-4">Дарунок для нас — турбота про них</h3>
+        <p className="text-lg font-light leading-relaxed">
+          Квіти пахнуть гарно, а корм — ще краще!
+          <br />
+          Мяу-мяу, гав-гав просять замість букетів принести
+          <span className="font-semibold"> смаколики для лапатих друзів</span>,
+          які цього потребують.
+        </p>
+        <p className="mt-4 text-base font-light">
+          Пухнастики скажуть дякую, і ми також 
+        </p>
+
+      </section>
+      
       {/* Footer */}
-      <footer className="bg-green-800 text-white py-12">
-        <div className="max-w-4xl mx-auto text-center px-4">
-          <div className="flex items-center justify-center mb-6">
-            
-            <span className="text-2xl font-light">Андрій & Дарина</span>
-            
+      <footer
+        className="text-white py-12 bg-cover bg-center relative"
+        style={{
+          backgroundImage: `url(${FooterBg})`,
+          backgroundSize: "100%",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <div className="relative max-w-4xl mx-auto text-center px-4">
+          <div className="flex items-center justify-center mb-5">
+            <span className="text-2xl font-light mt-1">Андрій & Дарина</span>
           </div>
           <p className="font-light">11 жовтня 2025</p>
-          <p className="text-sm mt-4">Дякуємо, що поділите з нами цей особливий день!</p>
+          <p className="text-sm ">
+            Дякуємо, що поділите з нами цей особливий день!
+          </p>
         </div>
       </footer>
     </div>
   );
 }
 
-export default App; 
+export default App;
