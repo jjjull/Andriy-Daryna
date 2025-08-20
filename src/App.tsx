@@ -74,16 +74,19 @@ function App() {
     <div className="min-h-screen bg-white font-serif">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-end justify-center overflow-hidden">
-        <motion.div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${img1})` }}
-          initial={{ scale: 1.1, opacity: 0 }}
+        <motion.img
+          src={img1}
+          alt="Hero"
+          className="absolute inset-0 w-full h-full 
+               object-cover lg:object-contain"
+          initial={{ scale: 1.05, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 2, ease: "easeOut" }}
         />
 
+        {/* Тінь поверх фото */}
         <motion.div
-          className="absolute inset-0 bg-black bg-opacity-20"
+          className="absolute inset-0 bg-gray bg-opacity-20"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 0.5 }}
@@ -97,7 +100,7 @@ function App() {
             transition={{ delay: 0.3, duration: 1 }}
           >
             <div className="mb-8 mt-12">
-              <h1 className="text-4xl md:text-7xl font-light mb-6 tracking-wider">
+              <h1 className="text-4xl md:text-6xl lg:text-4xl font-light mb-6 tracking-wider">
                 Андрій
               </h1>
               <div className="flex items-center justify-center mb-6">
@@ -105,7 +108,7 @@ function App() {
                 <span className="mx-7 text-xl font-light">та</span>
                 <div className="w-20 h-px bg-white opacity-70"></div>
               </div>
-              <h1 className="text-4xl md:text-7xl font-light tracking-wider">
+              <h1 className="text-4xl md:text-6xl lg:text-4xl font-light tracking-wider">
                 Дарина
               </h1>
             </div>
@@ -186,10 +189,7 @@ function App() {
       <Confirmation />
       <WeddingLocation />
       {/* Animal Section */}
-      <section
-        className="relative  px-6 text-center max-w-3xl mx-auto bg-white"
-       
-      >
+      <section className="relative  px-6 text-center max-w-3xl mx-auto bg-white">
         <div className="bg-white bg-opacity-20 rounded-2xl p-6">
           <h3 className="text-2xl font-light mb-4">
             Дарунок для нас — турбота про них
@@ -206,7 +206,7 @@ function App() {
           </p>
 
           {/* Лапки під текстом */}
-          <img src={Dog} alt="Лапки" className="mx-auto  w-96" />
+          <img src={Dog} alt="Лапки" className="mx-auto w-[500px] h-auto" />
         </div>
       </section>
 
