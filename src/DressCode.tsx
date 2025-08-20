@@ -3,11 +3,11 @@ import Flower from "./assets/flower.svg";
 
 export default function DressCode() {
   const colors = [
-    { hex: "#996633" },
-    { hex: "#C2B280" },
-    { hex: "#f5deb3" },
-    { hex: "#7BA05B" },
-    { hex: "#d4efdf" },
+    { hex: "rgb(110, 91, 80)" },
+    { hex: "rgb(209, 201, 188)" },
+    { hex: "rgb(230, 207, 198)" },
+    { hex: "rgb(156, 174, 163)" },
+    { hex: "rgb(185, 201, 217)" },
   ];
 
   return (

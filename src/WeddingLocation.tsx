@@ -49,7 +49,7 @@ export default function WeddingLocation() {
               вул. Б. Хмельницького 4, Минай
             </p>
             <a
-              href="https://www.google.com/maps/place/%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0+%D0%9C%D0%B0%D1%80%D1%96%D1%97+%D0%84%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%D1%81%D1%8C%D0%BA%D0%BE%D1%97/@48.5923763,22.2843037,17z"
+              href="https://www.google.com/maps/place/%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0+%D0%9C%D0%B0%D1%80%D1%96%D1%97+%D0%84%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%D1%81%D1%8C%D0%BA%D0%BE%D1%97/@48.5923763,22.2817288,17z/data=!3m1!4b1!4m6!3m5!1s0x47391900029dc953:0xe9c1b5038fa01b16!8m2!3d48.5923763!4d22.2843037!16s%2Fg%2F11wpz7n21w?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-block bg-gray-800 text-white px-6 py-3 rounded-xl text-lg font-medium shadow-md hover:bg-gray-600 transition"
@@ -76,7 +76,7 @@ export default function WeddingLocation() {
               вул. Дитяча 1г, Ужгород
             </p>
             <a
-              href="https://www.google.com/maps?q=48.642501,22.3107032"
+              href="https://www.google.com/maps/place/%D0%9A%D1%96%D0%BB%D1%96%D0%BA%D1%96%D1%8F/@48.642501,22.3081283,17z/data=!3m1!4b1!4m6!3m5!1s0x473919d4777f9643:0x8b3296387ab85d62!8m2!3d48.642501!4d22.3107032!16s%2Fg%2F12hll3r2s?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 inline-block bg-gray-800 text-white px-6 py-3 rounded-xl text-lg font-medium shadow-md hover:bg-gray-600 transition"

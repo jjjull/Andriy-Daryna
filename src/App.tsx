@@ -8,7 +8,7 @@ import WeddingLocation from "./WeddingLocation";
 import DressCode from "./DressCode";
 import Confirmation from "./Confirmation";
 import FooterBg from "./heart.jpg";
-
+import Dog from "./dogcat.svg";
 
 interface TimeLeft {
   days: number;
@@ -185,23 +185,31 @@ function App() {
       <DressCode />
       <Confirmation />
       <WeddingLocation />
-
       {/* Animal Section */}
-      <section className="relative bg-white pb-12 px-6 text-center max-w-3xl mx-auto">
-        <h3 className="text-2xl font-light mb-4">Дарунок для нас — турбота про них</h3>
-        <p className="text-lg font-light leading-relaxed">
-          Квіти пахнуть гарно, а корм — ще краще!
-          <br />
-          Мяу-мяу, гав-гав просять замість букетів принести
-          <span className="font-semibold"> смаколики для лапатих друзів</span>,
-          які цього потребують.
-        </p>
-        <p className="mt-4 text-base font-light">
-          Пухнастики скажуть дякую, і ми також 
-        </p>
+      <section
+        className="relative  px-6 text-center max-w-3xl mx-auto bg-white"
+       
+      >
+        <div className="bg-white bg-opacity-20 rounded-2xl p-6">
+          <h3 className="text-2xl font-light mb-4">
+            Дарунок для нас — турбота про них
+          </h3>
+          <p className="text-lg font-light leading-relaxed">
+            Квіти пахнуть гарно, а корм — ще краще!
+            <br />
+            Мяу-мяу, гав-гав просять замість букетів принести
+            <span className="font-semibold"> смаколики для лапатих друзів</span>
+            , які цього потребують.
+          </p>
+          <p className="mt-4 text-base font-light">
+            Пухнастики скажуть дякую, і ми також
+          </p>
 
+          {/* Лапки під текстом */}
+          <img src={Dog} alt="Лапки" className="mx-auto  w-96" />
+        </div>
       </section>
-      
+
       {/* Footer */}
       <footer
         className="text-white py-12 bg-cover bg-center relative"
