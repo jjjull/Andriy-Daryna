@@ -134,6 +134,8 @@ function App() {
               <p className="text-lg font-light mb-8 tracking-wide">
                 До весілля залишилось
               </p>
+
+              
               <div className="grid grid-cols-4 gap-4 text-center">
                 {["Днів", "Годин", "Хвилин", "Секунд"].map((label, i) => (
                   <motion.div
